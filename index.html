@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays - Matrizes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p>Como declarar os Arrays ?</p>
+    <pre>
+        <code>
+            var fruits = ["Maçã", "Laranja", "Manga"];
+            console.log(fruits);
+            document.getElementById("declarationOfArrays").innerHTML = fruits;
+        </code>
+    </pre>
+    <div>Resultado aparece na id=declarationOfArrays</div>
+    <h4 id="declarationOfArrays"></h4>
+
+    <hr>
+    <p>Como buscar o primeiro elemento do Array ?</p>
+    <div style="color:red;"> Nossa array é fruits = ["Maçã", "Laranja", "Manga"];</div>
+    <pre>
+        <code>
+            var firstFruit = fruits[0];
+            console.log(firstFruit);
+            document.getElementById("accessFirstElement").innerHTML = firstFruit;
+        </code>
+    </pre>
+    <div>Resultado aparece na id=accessFirstElement</div>
+    <h4 id="accessFirstElement"></h4>
+
+    <hr>
+    <p>Como buscar o segundo elemento do Array ?</p>
+    <div style="color:red;"> Nossa array é fruits = ["Maçã", "Laranja", "Manga"];</div>
+    <pre>
+        <code>
+            var secondFruit = fruits[1];
+            console.log(secondFruit);
+            document.getElementById("accessSecondElement").innerHTML = secondFruit;
+        </code>
+    </pre>
+    <div>Resultado aparece na id=accessSecondElement</div>
+    <h4 id="accessSecondElement"></h4>
+
+    <hr>
+    <p>Como buscar o terceiro elemento do Array ?</p>
+    <div style="color:red;"> Nossa array é fruits = ["Maçã", "Laranja", "Manga"];</div>
+    <pre>
+        <code>
+            var thirdFruit = fruits[2];
+            console.log(thirdFruit);
+            document.getElementById("accessThirdElement").innerHTML = thirdFruit;
+        </code>
+    </pre>
+    <div>Resultado aparece na id=accessThirdElement</div>
+    <h4 id="accessThirdElement">
+    </h4>
+
+    <hr>
+    <p>Como obter o comprimento do Array ?</p>
+    <div style="color:red;"> Nossa array é fruits = ["Maçã", "Laranja", "Manga"];</div>
+    <pre>
+        <code>
+            var lengthOfTheArray = fruits.length;
+            console.log(lengthOfTheArray);
+            document.getElementById("displayLengthOfArray").innerHTML = lengthOfTheArray;
+        </code>
+    </pre>
+    <div>Resultado aparece na id=displayLengthOfArray</div>
+    <h4 id="displayLengthOfArray"></h4>
+
+    <hr>
+    <p>Como utilizar o loop através do Array ?</p>
+    <div style="color:red;"> Nossa array é fruits = ["Maçã", "Laranja", "Manga"];</div>
+    <pre>
+        <code>
+            var arrayValue = "";
+            for (i = 0; i < fruits.length; i++) {
+                arrayValue = arrayValue + fruits[i] + 
+                document.getElementById("loopTheArray").innerHTML = arrayValue;
+            }
+        </code>
+    </pre>
+    <div>Resultado aparece na id=loopTheArray</div>
+    <h4 id="loopTheArray"></h4>
+
+    <hr>
+    <p>Como adicionar o elemento ao final do Array ?</p>
+    <div style="color:red;"> Nossa array é fruits = ["Maçã", "Laranja", "Manga"];</div>
+    <pre>
+        <code>
+            fruits.push("Limão");
+            console.log(fruits);
+            document.getElementById("addElementAtTheEndOfArray").innerHTML = fruits;
+        </code>
+    </pre>
+    <div>Resultado aparece na id=addElementAtTheEndOfArray</div>
+    <h4 id="addElementAtTheEndOfArray"></h4>
+
+    <hr>
+    <p>Como adicionar mais elementos ao final do Array ?</p>
+    <div style="color:red;"> Nossa array é fruits = ["Maçã", "Laranja", "Manga", "Limão"];</div>
+    <pre>
+        <code>
+            fruits.push("cereja");
+            console.log(fruits);
+            document.getElementById("addMoreElementAtTheEndOfArray").innerHTML = fruits;
+        </code>
+    </pre>
+    <div>Resultado aparece na id=addMoreElementAtTheEndOfArray</div>
+    <h4 id="addMoreElementAtTheEndOfArray"></h4>
+
+    <hr>
+    <p>Como declarar o array com letras do alfabeto ?</p>
+    <pre>
+        <code>
+            var alphabets = ["l" ,"a" , "e" , "j" , "b" , "g" , "f" , "h" , "c" , "d" , "i" , "k"];
+            console.log(alphabets);
+            document.getElementById("displayAlphabetsArray").innerHTML = alphabets;
+        </code>
+    </pre>
+    <div>Resultado aparece na id=displayAlphabetsArray</div>
+    <h4 id="displayAlphabetsArray"></h4>
+
+    <hr>
+    <p>Como organizar o array com o alfabeto ?</p>
+    <div style="color:red;"> Nossa array é alphabets = ["l" ,"a" , "e" , "j" , "b" , "g" , "f" , "h" , "c" , "d" , "i" , "k"];</div>
+    <pre>
+        <code>
+            alphabets.sort();
+            console.log(alphabets);
+            document.getElementById("displaySortedAlphabetsArray").innerHTML = alphabets;
+        </code>
+    </pre>
+    <div>Resultado aparece na id=displaySortedAlphabetsArray</div>
+    <h4 id="displaySortedAlphabetsArray"></h4>
+
+    <hr>
+    <p>Como reverter o array com o alfabeto ? </p>
+    <div style="color:red;"> Nossa array é alphabets = ["l" ,"a" , "e" , "j" , "b" , "g" , "f" , "h" , "c" , "d" , "i" , "k"];</div>
+    <pre>
+        <code>
+            alphabets.reverse();
+            console.log(alphabets);
+            document.getElementById("displayReverseArray").innerHTML = alphabets;
+        </code>
+    </pre>
+    <div>Resultado aparece na id=displayReverseArray</div>
+    <h4 id="displayReverseArray"></h4>
+
+    <hr>
+    <p> Como declarar o array com números ?</p>
+    <pre>
+        <code>
+            var numbers = ["45", "4", "9", "16", "25"];
+            console.log(numbers);
+            document.getElementById("displayNumberArray").innerHTML = numbers;        
+        </code>
+    </pre>
+    <div>Resultado aparece na id=displayNumberArray</div>
+    <h4 id="displayNumberArray"></h4>
+
+    <hr>
+    <p>Como encontar o número máximo de um array ?</p>
+    <div style="color:red;"> Nossa array é numbers = ["45", "4", "9", "16", "25"];</div>
+    <pre>
+        <code>
+            var maximumNumber = Math.max.apply(Math, numbers);
+            console.log(maximumNumber);
+            document.getElementById("displayMaximumNumber").innerHTML = maximumNumber;        
+        </code>
+    </pre>
+    <div>Resultado aparece na id=displayMaximumNumber</div>
+    <h4 id="displayMaximumNumber"></h4>
+
+
+    <hr>
+    <p>Como encontrar o número mínimo de um array ?</p>
+    <div style="color:red;"> Nossa array é numbers = ["45", "4", "9", "16", "25"];</div>
+    <pre>
+        <code>
+            var minimumNumber = Math.min.apply(Math, numbers);
+            console.log(minimumNumber);
+            document.getElementById("displayMinimumNumber").innerHTML = minimumNumber;        
+        </code>
+    </pre>
+    <div>Resultado aparece na id=displayMinimumNumber</div>
+    <h4 id="displayMinimumNumber"></h4>
+
+
+
+
+    <!-- ATIVIDADE ADICIONAL -->
+
+    <h3 style="background-color: red; font-size: 23px;">ATIVIDADE ADICIONAL</h3>
+    <p>Como adicionar elementos ao início do array ? Dica utilize o método unshift</p>
+    <div style="color:red;"> Nossa array é fruits = ["Maçã", "Laranja", "Manga", "Limão", "cereja"];</div>
+    <pre>
+        <code>
+            fruits.unshift("melancia");
+            console.log(fruits);
+            document.getElementById("addElementAtTheStartOfArray").innerHTML = fruits;
+        </code>
+    </pre>
+    <div>Resultado aparece na id=addElementAtTheStartOfArray</div>
+    <h4 id="addElementAtTheStartOfArray"></h4>
+    
+    
+    <hr>
+    <p>Utilize o método unshift para adicionar mais elementos ao início do array</p>
+    <div style="color:red;"> Nossa array é fruits = ["melancia", "Maçã", "Laranja", "Manga", "Limão", "cereja"];</div>
+    <pre>
+        <code>
+            fruits.unshift("morango");
+            console.log(fruits);
+            document.getElementById("addMoreElementAtTheStartOfArray").innerHTML = fruits;
+        </code>
+    </pre>
+    <div>Resultado aparece na id=addMoreElementAtTheStartOfArray</div>
+    <h4 id="addMoreElementAtTheStartOfArray"></h4>
+        
+    <hr>
+    <p>Utilize o método shift para remover os elementos do início do array</p>
+    <div style="color:red;"> Nossa array é fruits = ["morango", "melancia", "Maçã", "Laranja", "Manga", "Limão", "cereja"];</div>
+    <pre>
+        <code>
+            fruits.shift();  
+            console.log(fruits);
+            document.getElementById("removeElementFromStartOfArray").innerHTML = fruits;
+        </code>
+    </pre>
+    <div>Resultado aparece na id=removeElementFromStartOfArray</div>
+    <h4 id="removeElementFromStartOfArray"></h4>
+    
+    
+    <hr>
+    <p>Utilize o método pop para remover os elementos do final do array</p>
+    <div style="color:red;"> Nossa array é fruits = ["melancia", "Maçã", "Laranja", "Manga", "Limão", "cereja"];</div>
+    <pre>
+        <code>
+            fruits.pop();  
+            console.log(fruits);
+            document.getElementById("removeElementFromEndOfArray").innerHTML = fruits;
+        </code>
+    </pre>
+    <div>Resultado aparece na id=removeElementFromEndOfArray</div>
+    <h4 id="removeElementFromEndOfArray"></h4>
+    
+    <hr>
+    <p>Como declarar um array com paises desenvolvidos ?</p>
+    <pre>
+        <code>
+            var firstWorldCountries = ["EUA" , "CANADÁ" , "JAPÃO"];
+            document.getElementById("firstWorldCountries").innerHTML = firstWorldCountries;
+        </code>
+    </pre>
+    <div>Resultado aparece na id=firstWorldCountries</div>
+    <h4 id="firstWorldCountries"></h4>
+    
+
+    <hr>
+    <p>Como declarar um array com países em desenvolvimento ?</p>
+    <pre>
+        <code>
+            var secondWorldCountries = ["CHINA" , "RÚSSIA" , "ROMÊNIA"];
+            document.getElementById("secondWorldCountries").innerHTML = secondWorldCountries;
+        </code>
+    </pre>
+    <div>Resultado aparece na id=secondWorldCountries</div>
+    <h4 id="secondWorldCountries"></h4>
+    
+    
+
+    <hr>
+    <p>Utilize o método concat para unir os dois arrays</p>
+    <pre>
+        <code>
+            var allCountries = firstWorldCountries.concat(secondWorldCountries);
+            console.log(allCountries);
+            document.getElementById("mergeTwoArrays").innerHTML = allCountries;
+        </code>
+    </pre>
+    <h4 id="mergeTwoArrays"></h4>
+<script src="main.js"></script>
+</body>
+
+</html>
